@@ -39,7 +39,6 @@
 ### ⚙️ Update Mechanism
 
 - ⏰ Runs every **5 minutes**
-- 🧠 Fetches source from: `https://raw.githubusercontent.com/jitendra-unatti/fancode/refs/heads/main/data/fancode.json`
 - 🧩 Updates metadata:
   - `Author` → `CoderBoyBD`
   - `User-Agent` → `CoderBoyBD/8.0.0 (Linux;Android/13) AndroidXMedia3/1.1.1`
