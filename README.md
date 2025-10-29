@@ -1,5 +1,5 @@
 <h1 align="center">
-  🏏 FanCode Live Matches API (Auto Updated)
+  🏏 FanCode Live Matches Auto API & Playlist
 </h1>
 
 <p align="center">
@@ -8,50 +8,34 @@
 
 <p align="center">
   <b>🇮🇳 India & 🇧🇩 Bangladesh Region Auto Updated APIs</b><br>
-  Powered by <b>CoderBoyBD</b> • Maintained via GitHub Actions (every 5 mins)
+  Powered by <b>CoderBoyBD</b> • Automated via <b>GitHub Actions</b> (every 5 minutes)
 </p>
 
 ---
 
-### 📅 Last Updated
-> **04:30:59 PM 29-10-2025**
+### 🕒 Last Updated
+> **{{LAST_UPDATED}}**
+
+
+## 📦 Generated API Files
+
+| File | Description | RAW Link |
+|------|--------------|----------|
+| 🇮🇳 [`in_rest_api.json`](./in_rest_api.json) | Main FanCode API data for Indian CDN | [🔗 View Raw](https://raw.githubusercontent.com/hasanhabibmottakin/fancode/main/in_rest_api.json) |
+| 🇧🇩 [`bd_rest_api.json`](./bd_rest_api.json) | Region-modified API for Bangladesh CDN | [🔗 View Raw](https://raw.githubusercontent.com/hasanhabibmottakin/fancode/main/bd_rest_api.json) |
 
 ---
 
-### 📦 API Files
+## 🎵 Auto-Generated Playlists (M3U Format)
 
-| File Name | Description | Region |
-|------------|-------------|--------|
-| [`in_rest_api.json`](./in_rest_api.json) | Main FanCode API data (with metadata & matches) | 🇮🇳 India |
-| [`bd_rest_api.json`](./bd_rest_api.json) | Region-based API (mirrors IN → BD CDN) | 🇧🇩 Bangladesh |
-
----
-
-### 🎵 Playlist Files (M3U Format)
-
-| File Name | Description | Includes |
-|------------|-------------|-----------|
-| [`in_rest_playlist.m3u`](./in_rest_playlist.m3u) | Auto-generated playlist with **LIVE** / **STARTED** matches | Indian CDN |
-| [`bd_rest_playlist.m3u`](./bd_rest_playlist.m3u) | Same playlist but using **Bangladesh CDN** (`bd-mc-fdlive`) | BD CDN |
+| Playlist File | Description | RAW Link |
+|----------------|--------------|----------|
+| 🇮🇳 [`in_rest_playlist.m3u`](./in_rest_playlist.m3u) | Auto-generated playlist with Indian CDN (`in-mc-fdlive`) | [🔗 View Raw](https://raw.githubusercontent.com/hasanhabibmottakin/fancode/main/in_rest_playlist.m3u) |
+| 🇧🇩 [`bd_rest_playlist.m3u`](./bd_rest_playlist.m3u) | Same playlist but with Bangladesh CDN (`bd-mc-fdlive`) | [🔗 View Raw](https://raw.githubusercontent.com/hasanhabibmottakin/fancode/main/bd_rest_playlist.m3u) |
 
 ---
 
-### ⚙️ Update Mechanism
-
-- ⏰ Runs every **5 minutes**
-- 🧩 Updates metadata:
-  - `Author` → `CoderBoyBD`
-  - `User-Agent` → `CoderBoyBD/8.0.0 (Linux;Android/13) AndroidXMedia3/1.1.1`
-- 🪄 Generates:
-  - `in_rest_api.json`
-  - `bd_rest_api.json`
-  - `in_rest_playlist.m3u`
-  - `bd_rest_playlist.m3u`
-- 🚀 Auto pushes changes via GitHub Actions
-
----
-
-### 🧠 Example Playlist Entry
+## 🧠 Example M3U Entry
 
 ```m3u
 #EXTM3U
