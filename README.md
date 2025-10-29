@@ -44,12 +44,6 @@ Both **India (in-mc-fdlive)** and **Bangladesh (bd-mc-fdlive)** variants are gen
 * For iOS: GSE SMART IPTV,Movie Stream,Flex IPTV
 * For Windows: VLC,Kodi
 
-
-<h1 align="center">
- <a href="https://raw.githubusercontent.com/byte-capsule/FanCode-Hls-Fetcher/main/Fancode_Live.m3u"><img src="https://github.com/hasanhabibmottakin/FC/blob/main/img/vlc_playback.png"></a>
-
-
-
 ## 🔗 Raw Data Links
 
 | Type | Region | Raw Link |
@@ -58,6 +52,11 @@ Both **India (in-mc-fdlive)** and **Bangladesh (bd-mc-fdlive)** variants are gen
 | JSON | 🇧🇩 Bangladesh | [bd_rest_api.json](https://raw.githubusercontent.com/hasanhabibmottakin/FC/refs/heads/main/bd_rest_api.json) |
 | M3U Playlist | 🇮🇳 India | [in_rest_playlist.m3u](https://raw.githubusercontent.com/hasanhabibmottakin/FC/refs/heads/main/in_rest_playlist.m3u) |
 | M3U Playlist | 🇧🇩 Bangladesh | [bd_rest_playlist.m3u](https://raw.githubusercontent.com/hasanhabibmottakin/FC/refs/heads/main/bd_rest_playlist.m3u) |
+
+
+
+<h1 align="center">
+ <a href="https://raw.githubusercontent.com/hasanhabibmottakin/FC/refs/heads/main/bd_rest_playlist.m3u"><img src="https://github.com/hasanhabibmottakin/FC/blob/main/img/vlc_playback.png"></a>
 
 
 ---
