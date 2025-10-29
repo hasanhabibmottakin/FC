@@ -1,4 +1,4 @@
-name:  Auto Update FanCode Data
+name: Auto Update FanCode Data
 
 on:
   schedule:
@@ -29,38 +29,35 @@ jobs:
           python - <<'PY'
           import json, requests, datetime
 
-          
+        
           url = "${{ secrets.FANCODE_SOURCE_URL }}"
           print(f"Fetching from: {url}")
-          r = requests.get(url, timeout=20)
+          r = requests.get(url, timeout=30)
           data = r.json()
 
-          
+        
           data["Author"] = "CoderBoyBD"
           data["headers"]["User-Agent"] = "CoderBoyBD/8.0.0 (Linux;Android/13) AndroidXMedia3/1.1.1"
           data["last_updated"] = datetime.datetime.now().strftime("%I:%M:%S %p %d-%m-%Y")
 
-        
+          
           with open("in_rest_api.json", "w", encoding="utf-8") as f:
               json.dump(data, f, indent=2, ensure_ascii=False)
 
-          
+        
           bd_data = json.loads(json.dumps(data).replace("in-mc-fdlive", "bd-mc-fdlive"))
           with open("bd_rest_api.json", "w", encoding="utf-8") as f:
               json.dump(bd_data, f, indent=2, ensure_ascii=False)
 
-          
+         
           def make_m3u(source, filename):
               lines = ["#EXTM3U"]
               for m in source.get("matches", []):
                   if str(m.get("status", "")).upper() in ["LIVE", "STARTED"]:
                       title = f'{m.get("title","Unknown")} ({m.get("tournament","")})'
-                      url = (
-                          m.get("STREAMING_CDN", {})
-                           .get("Primary_Playback_URL")
-                      )
+                      url = m.get("STREAMING_CDN", {}).get("Primary_Playback_URL")
                       if not url or not isinstance(url, str):
-                          continue  # skip if no playable link
+                          continue
                       logo = m.get("image") or ""
                       lines.append(f'#EXTINF:-1 tvg-logo="{logo}",{title}')
                       lines.append(url)
@@ -69,13 +66,18 @@ jobs:
 
           make_m3u(data, "in_rest_playlist.m3u")
           make_m3u(bd_data, "bd_rest_playlist.m3u")
-          print(" Files generated successfully.")
+          print("Files generated successfully.")
           PY
+
+      - name: Update README timestamp
+        run: |
+          ts=$(date +"%I:%M:%S %p %d-%m-%Y")
+          sed -i "s|{{LAST_UPDATED}}|$ts|g" README.md
 
       - name: Commit & Push updates
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add in_rest_api.json bd_rest_api.json in_rest_playlist.m3u bd_rest_playlist.m3u
+          git add README.md in_rest_api.json bd_rest_api.json in_rest_playlist.m3u bd_rest_playlist.m3u
           git commit -m "⚡ Auto update FanCode data ($(date))" || echo "No changes"
           git push
