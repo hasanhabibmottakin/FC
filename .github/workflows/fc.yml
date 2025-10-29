@@ -1,4 +1,4 @@
-name:  Auto Update FanCode Data
+name: Auto Update FanCode Data
 
 on:
   schedule:
@@ -22,33 +22,33 @@ jobs:
           python-version: 3.x
 
       - name: Install dependencies
-        run: |
-          pip install requests
+        run: pip install requests
 
       - name: Fetch and process FanCode data
         run: |
+          python - <<'PY'
           import json, requests, datetime
 
-         
+      
           url = "${{ secrets.FANCODE_SOURCE_URL }}"
           r = requests.get(url, timeout=20)
           data = r.json()
 
-         
+          
           data["Author"] = "CoderBoyBD"
           data["headers"]["User-Agent"] = "CoderBoyBD/8.0.0 (Linux;Android/13) AndroidXMedia3/1.1.1"
           data["last_updated"] = datetime.datetime.now().strftime("%I:%M:%S %p %d-%m-%Y")
 
-         
+          
           with open("in_rest_api.json", "w", encoding="utf-8") as f:
               json.dump(data, f, indent=2, ensure_ascii=False)
 
-     
+         
           bd_data = json.loads(json.dumps(data).replace("in-mc-fdlive", "bd-mc-fdlive"))
           with open("bd_rest_api.json", "w", encoding="utf-8") as f:
               json.dump(bd_data, f, indent=2, ensure_ascii=False)
 
-       
+         
           def make_m3u(source, filename):
               lines = ["#EXTM3U"]
               for m in source.get("matches", []):
@@ -62,6 +62,7 @@ jobs:
 
           make_m3u(data, "in_rest_playlist.m3u")
           make_m3u(bd_data, "bd_rest_playlist.m3u")
+          PY
 
       - name: Commit & Push updates
         run: |
