@@ -44,8 +44,8 @@ Both **India (in-mc-fdlive)** and **Bangladesh (bd-mc-fdlive)** variants are gen
 |------|--------|----------|
 | JSON | 🇮🇳 India | [in_rest_api.json](https://raw.githubusercontent.com/hasanhabibmottakin/fancode/main/in_rest_api.json) |
 | JSON | 🇧🇩 Bangladesh | [bd_rest_api.json](https://raw.githubusercontent.com/hasanhabibmottakin/fancode/main/bd_rest_api.json) |
-| M3U Playlist | 🇮🇳 India | [in_rest_playlist.m3u](https://raw.githubusercontent.com/hasanhabibmottakin/fancode/main/in_rest_playlist.m3u) |
-| M3U Playlist | 🇧🇩 Bangladesh | [bd_rest_playlist.m3u](https://raw.githubusercontent.com/hasanhabibmottakin/fancode/main/bd_rest_playlist.m3u) |
+| M3U Playlist | 🇮🇳 India | [in_rest_playlist.m3u](https://raw.githubusercontent.com/hasanhabibmottakin/FC/refs/heads/main/in_rest_playlist.m3u) |
+| M3U Playlist | 🇧🇩 Bangladesh | [bd_rest_playlist.m3u](https://raw.githubusercontent.com/hasanhabibmottakin/FC/refs/heads/main/bd_rest_playlist.m3u) |
 
 
 ---
