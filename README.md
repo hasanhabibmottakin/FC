@@ -38,6 +38,18 @@ Both **India (in-mc-fdlive)** and **Bangladesh (bd-mc-fdlive)** variants are gen
 
 ---
 
+**⚡Recommended Players**
+* For Android: Televizo,NS Player
+* For Android TV: Televizo,OTT Navigator, TiVimate
+* For iOS: GSE SMART IPTV,Movie Stream,Flex IPTV
+* For Windows: VLC,Kodi
+
+
+<h1 align="center">
+ <a href="https://raw.githubusercontent.com/byte-capsule/FanCode-Hls-Fetcher/main/Fancode_Live.m3u"><img src="https://github.com/hasanhabibmottakin/FC/blob/main/img/vlc_playback.png"></a>
+
+
+
 ## 🔗 Raw Data Links
 
 | Type | Region | Raw Link |
