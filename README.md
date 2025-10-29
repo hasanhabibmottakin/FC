@@ -44,14 +44,6 @@
 
 ---
 
-## 🔵 Key Features
-- ✅ Source থেকে প্রতি ৫ মিনিটে 자동 ফেচ ও প্রসেসিং (GitHub Actions)  
-- ✅ `Author` ও `User-Agent` কাস্টমাইজ করা (CoderBoyBD)  
-- ✅ IN ↔ BD CDN ডোমেইন ক্লোন (in-mc-fdlive → bd-mc-fdlive)  
-- ✅ Live / Started ম্যাচগুলো থেকে `.m3u` প্লেলিস্ট জেনারেট করা  
-- ✅ সরাসরি Raw GitHub links দিয়ে ব্যবহারযোগ্য ফাইল সরবরাহ
-
----
 
 ## 🧾 Example Playlist Entry
 
@@ -59,3 +51,82 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Bangladesh-vs-West-Indies-T20I_old-(1).jpg",West Indies Vs Bangladesh (West Indies tour of Bangladesh, 2025)
 https://in-mc-fdlive.fancode.com/mumbai/137704_english_hls_e4a280240634404_1ta-di_h264/index.m3u8
+
+## Example Json Entry
+```json
+{
+  "Author": "CoderBoyBD",
+  "name": "FanCode Live Matches API",
+  "last_updated": "05:00:57 PM 29-10-2025",
+  "headers": {
+    "User-Agent": "CoderBoyBD/8.0.0 (Linux;Android/13) AndroidXMedia3/1.1.1",
+    "Referer": "https://fancode.com/"
+  },
+  "total_matches": 38,
+  "live_matches": 3,
+  "upcoming_matches": 35,
+  "matches": [
+    {
+      "category": "Football",
+      "title": "Sc Paderborn 07 Vs Bayer 04 Leverkusen",
+      "tournament": "DFB Pokal 2025-26",
+      "match_id": 136939,
+      "status": "LIVE",
+      "streamingStatus": "STARTED",
+      "startTime": "29 October 2025 10:30 PM",
+      "startDate": "01 January 1970 05:30 AM",
+      "image": "https://www.fancode.com/skillup-uploads/cms-media/136939_5570_PDB_LEV_Fc-Web.jpg",
+      "image_cdn": {
+        "TATAPLAY": "https://images.fancode.com/aig/match/v1/136939_CASACARDS_PARTNER_16_9_1920_1080.png",
+        "APP": "https://www.fancode.com/skillup-uploads/cms-media/136939_5570_PDB_LEV_Fc-Web.jpg",
+        "PLAYBACK": "https://www.fancode.com/skillup-uploads/cms-media/136939_5570_PDB_LEV_Fc-Web.jpg",
+        "LOGO": "https://fancode.com/skillup-uploads/prod-images/2024/11/DFB-POKAL-Tour-Logo1.png",
+        "SPORTS": "https://www.fancode.com/skillup-uploads/cms-media/Football_Fallback_Old_match-card.jpg",
+        "BG_IMAGE": "https://www.fancode.com/skillup-uploads/cms-media/136939_5570_PDB_LEV_Fc-Web.jpg",
+        "SPORT_BY_IMAGE": "https://www.fancode.com/skillup-uploads/cms-media/136939_5570_PDB_LEV_Fc-app.jpg",
+        "CLOUDFARE": "https://d229kpbsb5jevy.cloudfront.net/vffancode2/aig/match/v1/136939_CASACARDS_PARTNER_16_9_1920_1080.png"
+      },
+      "teams": [
+        {
+          "name": "SC Paderborn 07",
+          "shortName": "PDB",
+          "flag": {
+            "src": "https://d13ir53smqqeyp.cloudfront.net/flags/ft-flags/FC-PDB@2x.png"
+          },
+          "isWinner": null,
+          "color": "#ffe981",
+          "cricketScore": null,
+          "kabaddiScore": null,
+          "footballScore": null,
+          "basketBallScore": null,
+          "hockeyScore": null,
+          "status": null
+        },
+        {
+          "name": "Bayer 04 Leverkusen",
+          "shortName": "LEV",
+          "flag": {
+            "src": "https://d13ir53smqqeyp.cloudfront.net/flags/ft-flags/FC-LEV@2x.png"
+          },
+          "isWinner": null,
+          "color": "#f16065",
+          "cricketScore": null,
+          "kabaddiScore": null,
+          "footballScore": null,
+          "basketBallScore": null,
+          "hockeyScore": null,
+          "status": null
+        }
+      ],
+      "language": "ENGLISH",
+      "adfree_stream": "https://bd-mc-fdlive.fancode.com/mumbai/136939_english_hls_20f2e900f151066_1ta-di_h264/index.m3u8",
+      "dai_stream": "https://dai.google.com/linear/hls/event/Q_UdS67gTdG8v4jpWjTCqA/master.m3u8",
+      "STREAMING_CDN": {
+        "Primary_Playback_URL": "https://bd-mc-fdlive.fancode.com/mumbai/136939_english_hls_20f2e900f151066_1ta-di_h264/index.m3u8",
+        "fancode_cdn": "https://bd-mc-fdlive.fancode.com/mumbai/136939_english_hls_20f2e900f151066_1ta-di_h264/index.m3u8",
+        "dai_google_cdn": "https://dai.google.com/linear/hls/event/Q_UdS67gTdG8v4jpWjTCqA/master.m3u8",
+        "cloudfront_cdn": "Unavailable",
+        "sony_cdn": "Unavailable",
+        "language": "ENGLISH"
+      }
+    }
