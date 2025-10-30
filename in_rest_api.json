@@ -1,7 +1,7 @@
 {
   "Author": "CoderBoyBD",
   "name": "FanCode Live Matches API",
-  "last_updated": "06:56:21 AM 30-10-2025",
+  "last_updated": "07:25:40 AM 30-10-2025",
   "headers": {
     "User-Agent": "CoderBoyBD/8.0.0 (Linux;Android/13) AndroidXMedia3/1.1.1",
     "Referer": "https://fancode.com/"
@@ -41,9 +41,9 @@
           "color": "#0f266e",
           "cricketScore": [
             {
-              "runs": 67,
-              "overs": "17.5",
-              "balls": "107",
+              "runs": 99,
+              "overs": "25",
+              "balls": "150",
               "status": "IN_PROGRESS",
               "wickets": 3
             }
@@ -162,8 +162,8 @@
               "wickets": 10
             },
             {
-              "runs": 17,
-              "overs": "3",
+              "runs": 28,
+              "overs": "8",
               "balls": "0",
               "status": "IN_PROGRESS",
               "wickets": 1
@@ -250,11 +250,11 @@
           "color": "#ffd500",
           "cricketScore": [
             {
-              "runs": 192,
-              "overs": "54.4",
+              "runs": 220,
+              "overs": "66",
               "balls": "0",
               "status": "IN_PROGRESS",
-              "wickets": 3
+              "wickets": 4
             }
           ],
           "kabaddiScore": null,
@@ -318,8 +318,8 @@
               "wickets": 10
             },
             {
-              "runs": 129,
-              "overs": "48.2",
+              "runs": 164,
+              "overs": "59.3",
               "balls": "0",
               "status": "IN_PROGRESS",
               "wickets": 1
@@ -524,15 +524,15 @@
       "streamingStatus": "NOT_STARTED",
       "startTime": "30 October 2025 11:00 PM",
       "startDate": "01 January 1970 05:30 AM",
-      "image": "https://www.fancode.com/skillup-uploads/cms-media/Football_Fallback_Old_match-card.jpg",
+      "image": "https://www.fancode.com/skillup-uploads/cms-media/Al-Ahli-Saudi-FC-vs-Al-Riyadh-SC_old.jpg",
       "image_cdn": {
         "TATAPLAY": "https://images.fancode.com/aig/match/v1/137889_CASACARDS_PARTNER_16_9_1920_1080.png",
-        "APP": "https://www.fancode.com/skillup-uploads/cms-media/Football_Fallback_Old_match-card.jpg",
+        "APP": "https://www.fancode.com/skillup-uploads/cms-media/Al-Ahli-Saudi-FC-vs-Al-Riyadh-SC_old.jpg",
         "PLAYBACK": null,
         "LOGO": "https://www.fancode.com/skillup-uploads/cms-media/RSL-Tour-Logo.png",
         "SPORTS": "https://www.fancode.com/skillup-uploads/cms-media/Football_Fallback_Old_match-card.jpg",
-        "BG_IMAGE": "https://www.fancode.com/skillup-uploads/cms-media/Football_Fallback_Old_match-card.jpg",
-        "SPORT_BY_IMAGE": "https://fancode.com/skillup-uploads/prod-images/2023/08/FC_Sports_Default_Football.jpg",
+        "BG_IMAGE": "https://www.fancode.com/skillup-uploads/cms-media/Al-Ahli-Saudi-FC-vs-Al-Riyadh-SC_old.jpg",
+        "SPORT_BY_IMAGE": "https://www.fancode.com/skillup-uploads/cms-media/Al-Ahli-Saudi-FC-vs-Al-Riyadh-SC_Sporty.jpg",
         "CLOUDFARE": "https://d229kpbsb5jevy.cloudfront.net/vffancode2/aig/match/v1/137889_CASACARDS_PARTNER_16_9_1920_1080.png"
       },
       "teams": [
