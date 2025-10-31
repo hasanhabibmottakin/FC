@@ -1,7 +1,7 @@
 {
   "Author": "CoderBoyBD",
   "name": "FanCode Live Matches API",
-  "last_updated": "05:46:07 AM 31-10-2025",
+  "last_updated": "05:58:38 AM 31-10-2025",
   "headers": {
     "User-Agent": "CoderBoyBD/8.0.0 (Linux;Android/13) AndroidXMedia3/1.1.1",
     "Referer": "https://fancode.com/"
@@ -82,11 +82,11 @@
               "wickets": 10
             },
             {
-              "runs": 172,
-              "overs": "59",
+              "runs": 181,
+              "overs": "63.5",
               "balls": "0",
               "status": "IN_PROGRESS",
-              "wickets": 6
+              "wickets": 7
             }
           ],
           "kabaddiScore": null,
@@ -184,11 +184,11 @@
               "wickets": 10
             },
             {
-              "runs": 34,
-              "overs": "10.1",
+              "runs": 39,
+              "overs": "14",
               "balls": "0",
               "status": "IN_PROGRESS",
-              "wickets": 1
+              "wickets": 2
             }
           ],
           "kabaddiScore": null,
